@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ziropa</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ixm2pip.css" />
+    <!--font styles-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!--mapboks-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <!--meta-->
+    <meta
+      name="Ziropa"
+      content="drinks,ziropa,lemonade,opblanding,sirup,aarhus,historie,shots,drink"
+    />
+  </head>
+
+  <body>
+    <!-----------header/nav------>
+    <header>
+      <nav>
+        <a class="btn-one" href="#sortiment-1">Vores udvalg</a>
+        <a class="btn-one" href="#billederfakta">Værdier</a>
+        <a class="btn-one" href="#historie-sektion">Historie</a>
+        <a class="btn-one" href="#produktion">Produktion</a>
+        <a class="btn-one" href="#map">Lokation</a>
+        <a class="btn-one" href="#footer">Kontakt</a>
+      </nav>
+    </header>
+    <!-----------header/nav slut ------>
+
+    <!------heroe section------->
+    <section id="forside-heroe">
+      <!--heroe titel-->
+      <div id="forside-titel">
+        <img src="images/navn_hvid500px.png" alt="ziropa titel" />
+      </div>
+      <!--heroe tekst-->
+      <div id="forside-tekst">
+        <h2>Sirup & Lemonade</h2>
+        <p>Fra hjertet af Aarhus</p>
+      </div>
+      <!--pil ned-->
+      <a id="forside-pilned" href="#sortiment-1">
+        <img
+          src="images/expand_more_FILL0_wght400_GRAD0_opsz48.png"
+          alt="arrow down"
+        />
+      </a>
+    </section>
+    <!------heroe section slut------->
+
+    <!------sortiment------->
+    <ul class="gallery">
+      <li id="sortiment-1">
+        <img src="images/Solbærlemonade.png" alt="Solbærlemonade" />
+        <h2>Solbærlemonade</h2>
+      </li>
+      <li id="sortiment-2">
+        <img src="images/Vaniljesirup.png" alt="Vaniljesirup" />
+        <h2>Vaniljesirup</h2>
+      </li>
+      <li id="sortiment-3">
+        <img src="images/Passionsfrugt.png" alt="Passionsfrugt" />
+        <h2>Passionsfrugt</h2>
+      </li>
+      <li id="sortiment-4">
+        <img src="images/Saltkaramelsirup.png" alt="Saltkaramel" />
+        <h2>Saltkaramel</h2>
+      </li>
+      <li id="sortiment-5">
+        <img src="images/Alleflasker.png" alt="Alle flasker" />
+        <h2>Se vores udvalg</h2>
+      </li>
+      <!--kopi af ovenstående for at skabe illusionen af det går i cirkel-->
+      <li id="sortiment-1">
+        <img src="images/Solbærlemonade.png" alt="Solbærlemonade" />
+        <h2>Solbærlemonade</h2>
+      </li>
+      <li id="sortiment-2">
+        <img src="images/Vaniljesirup.png" alt="Vaniljesirup" />
+        <h2>Vaniljesirup</h2>
+      </li>
+      <li id="sortiment-3">
+        <img src="images/Passionsfrugt.png" alt="Passionsfrugt" />
+        <h2>Passionsfrugt</h2>
+      </li>
+      <li id="sortiment-4">
+        <img src="images/Saltkaramelsirup.png" alt="Saltkaramel" />
+        <h2>Saltkaramel</h2>
+      </li>
+      <li id="sortiment-5">
+        <img src="images/Alleflasker.png" alt="Alle flasker" />
+        <h2>Se vores udvalg</h2>
+      </li>
+    </ul>
+    <script src="javascript.js"></script>
+    <!------sortiment slut------->
+
+    <!--værdier/fakta-->
+
+    <!--værdier/fakta 1-->
+    <section id="billederfakta">
+      <h4>01</h4>
+      <h3>Naturlige Råvare</h3>
+      <h2>De bedste råvare til de bedste smage</h2>
+      <div class="billederontop1">
+        <img src="images/fancydrink.JPG" alt="fancydrink" />
+      </div>
+      <div class="billederontop2">
+        <img src="images/kaffeop.jpg" alt="kaffeop" />
+      </div>
+      <div class="billederontop3">
+        <img src="images/drikop.jpg" alt="drinktop" />
+      </div>
+    </section>
+
+    <!--værdier/fakta 2-->
+    <section id="billederfakta">
+      <h1>02</h1>
+      <h3>Fra Hjertet Af Aarhus</h3>
+      <h5>Startup med dybe rødder i Aarhus</h5>
+      <div class="billederontop4">
+        <img src="images/ziropabygning.jpg" alt="ziropa bygning" />
+      </div>
+      <div class="billederontop5">
+        <img src="images/logoontop.png" alt="logo" />
+      </div>
+      <div class="billederontop6">
+        <img src="images/sommervand.JPG" alt="sommervand" />
+      </div>
+      <div class="billederontop7">
+        <img src="images/alletre.jpg" alt="alletre" />
+      </div>
+    </section>
+
+    <!--værdier/fakta 3-->
+    <section id="billederfakta">
+      <h4>03</h4>
+      <h3>Vi brænder for kunden</h3>
+      <h2>Den gode smag til en fantastisk oplevelse</h2>
+      <div class="billederontop8">
+        <img src="images/hanzo.png" alt="hanzo" />
+      </div>
+      <div class="billederontop9">
+        <img src="images/kunde.png" alt="kunde" />
+      </div>
+      <div class="billederontop10">
+        <img src="images/kaffeziropa.jpg" alt="drinktop" />
+      </div>
+    </section>
+    <!--værdier/fakta slut-->
+
+    <!--historie-->
+    <div id="historie-sektion"></div>
+    <div class="timeline">
+      <div class="historie-container left">
+        <div class="historie-content">
+          <h2>2018</h2>
+          <h2>Team Ziropa</h2>
+          <p>
+            Vi startede i 2018 med en vision om at lave sirup på naturlige
+            råvarer. <br />
+            <br />
+            Ideen om at producere naturlig sirup kom en dag, hvor vi sammen sad
+            og nød en kold drink. Her undrede vi os over, hvorfor sirup skulle
+            være tilsat smagsforstærkere.<br />
+            <br />Den naturlige aroma, som vi mener, at god sirup skulle smage
+            af, fandtes altså ikke på markedet. Med henblik på at producere
+            friskere sirup og gøre din næste drink eller morgenkaffe det bedre,
+            så startede vi vores virksomhed, Ziropa.
+          </p>
+        </div>
+        <!-- left img-->
+        <div class="introbilleder">
+          <img src="images/headshot.png" alt="headshot" />
+        </div>
+      </div>
+
+      <!-- content right-->
+      <div class="historie-container right">
+        <div class="historie-content">
+          <h2>2019</h2>
+          <h2>Produktionen</h2>
+          <p>
+            Hos Ziropa sirup er vi drevet af en passion for sirup, men helt
+            grundlæggende ligger vores kærlighed inden for de naturlige råvarer.
+            Vi tror på, at sirup og fødevarer generelt smager bedst, når de er
+            lavet på friske naturlige råvarer. Derfor er kvalitet, det vigtigste
+            for os.
+          </p>
+
+          <!-- right img-->
+          <img id="gif" src="images/ziropagif.gif" alt="ziropa gif" />
+        </div>
+      </div>
+
+      <div class="historie-container left">
+        <div class="historie-content">
+          <h2>2020</h2>
+          <h2>Fra katastrofe til succes</h2>
+          <p>
+            Selvom Ziropa fik en hård fødsel med bla. Covid-19, formåede
+            drengene at få noget positivt ud af krisen Nu kan du nyde en lækker
+            iskaffe
+          </p>
+          <img id="tidslinje-kaffe" src="images/ziropakaffe.png" alt="kaffe" />
+        </div>
+      </div>
+    </div>
+
+    <!--historie slut  -->
+
+    <!--Produtkion-->
+    <section id="produktion">
+      <div id="produktion-titel">
+        <h2>Vi skaber alt fra bunden</h2>
+        <p>Vi skaber udvalg og smage i sammarbejde med dig</p>
+      </div>
+      <div id="produktion-video">
+        <video
+          id="myVideo"
+          autoplay
+          loop="true"
+          muted
+          controls
+          src="images/siropavideo.mp4"
+          type="video/mp4"
+        ></video>
+      </div>
+    </section>
+    <!--Produtkion slut-->
+
+    <!--lokation-->
+    <section id="kort">
+      <div class="center">
+        <h2>Find os i hjertet af Aarhus</h2>
+      </div>
+
+      <div>
+        <div class="container">
+          <div id="map"></div>
+        </div>
+      </div>
+
+      <div class="center2">
+        <img src="images/element_hvid-sort500px.png" alt="" />
+        <span>Peter Sabroes Gade 7, 8000 Aarhus </span>
+      </div>
+    </section>
+    <!--thirdpartystyles-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoiZnJlZGVyaWtram9iIiwiYSI6ImNsOXdrbXl0cDAxaGMzcG05cXFlYXQzdmIifQ.ze1jdO1OccSgX_JquFe5RA";
+      var map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/frederikkjob/cl9xyy9tq000l14obipld0hww",
+      });
+    </script>
+    <!--lokation slut-->
+
+    <!--------------Footer-------------->
+    <footer>
+      <section id="footer">
+        <!--Footer kontakt os -->
+        <div id="footer-kontakttekst">
+          <h2>Kontakt os</h2>
+          <hr />
+        </div>
+        <!--Footer kontak muligheder-->
+        <div id="footer-tekst">
+          <!--Footer mail-->
+          <div>
+            <img src="images/mail.svg" alt="mail" />
+            <h2>Info@ziropasiruop.dk</h2>
+          </div>
+          <!--Footer telefon-->
+          <div>
+            <img src="images/phone.svg" alt="telefon" />
+            <h2>+4529130223</h2>
+          </div>
+          <!--Footer adresse-->
+          <div>
+            <img src="images/map-pin.svg" alt="lokation" />
+            <h2>Peter Sabroes Gade 7, 8000 Aarhus</h2>
+          </div>
+        </div>
+        <!--Footer sociale medier svg-->
+        <div id="footer-sociale">
+          <div><img src="images/icons8-facebook.svg" alt="facebook" /></div>
+          <div>
+            <img src="images/icons8-linkedin-circled.svg" alt="linkedin" />
+          </div>
+          <div>
+            <img src="images/icons8-instagram-old.svg" alt="" />
+          </div>
+          <!--Footer ziropa logo-->
+          <div id="footer-logo">
+            <img src="images/navn_tagline_hvid1900px.png" alt="ziropa" />
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!--------------Footer slut -------------->
+  </body>
+</html>

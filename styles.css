@@ -1,0 +1,726 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Start herfra */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "mongoose";
+  font-weight: lighter;
+}
+
+p,
+a {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}
+
+/*Header*/
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+header > nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70px;
+}
+
+header > nav > a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  box-sizing: border-box;
+  border: 2px solid #cedce500;
+  border-radius: 15px 16px;
+}
+/*Header slut*/
+
+/*heroe*/
+#forside-heroe {
+  background-image: url(images/IMG_8260-3.jpg);
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  display: flex;
+}
+
+/*heroe titel*/
+#forside-titel {
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  padding-left: 35%;
+  margin-bottom: 20%;
+}
+/*heroe tekst*/
+#forside-tekst {
+  color: #ffffff;
+  margin-top: 25%;
+  font-size: 20pt;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+#forside-tekst > h2 {
+  font-size: 60pt;
+}
+#forside-tekst > p {
+  padding-top: 10px;
+  font-size: 20pt;
+}
+
+#forside-pilned {
+  align-self: center;
+  position: absolute;
+  margin-top: 30%;
+  padding-left: 45%;
+}
+
+/*heroe slut*/
+
+/*sortiment*/
+
+/*carrousel*/
+/*gøre det ikke muligt at select billeder og tekst*/
+.gallery {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(10, 35vw);
+  grid-template-rows: 1fr;
+  overflow: scroll;
+  height: 500px;
+  scroll-snap-type: both mandatory;
+  scroll-padding: 1rem;
+  background-color: #282828;
+  margin-bottom: 0;
+}
+
+.active {
+  scroll-snap-type: unset;
+}
+
+li {
+  scroll-snap-align: center;
+  display: inline-block;
+  font-size: 0;
+}
+/*carrousel baggrunds farver*/
+#sortiment-1,
+#sortiment-3,
+#sortiment-5 {
+  background-color: #181818;
+  width: 600px;
+}
+#sortiment-2,
+#sortiment-4 {
+  background-color: #282828;
+  width: 600px;
+}
+/*carrousel billeder*/
+/*flaske 2*/
+#sortiment-1 > img {
+  width: 70%;
+  padding-top: 50px;
+  padding-left: 30%;
+}
+#sortiment-1 > h2 {
+  font-size: 25pt;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 20px;
+}
+
+/*flaske 2*/
+#sortiment-2 > img {
+  width: 70%;
+  padding-top: 50px;
+  padding-left: 30%;
+}
+#sortiment-2 > h2 {
+  font-size: 25pt;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 20px;
+}
+
+/*flaske 3*/
+#sortiment-3 > img {
+  width: 70%;
+  padding-top: 50px;
+  padding-left: 30%;
+}
+#sortiment-3 > h2 {
+  font-size: 25pt;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 20px;
+}
+
+/*flaske 4*/
+#sortiment-4 > img {
+  width: 90%;
+  padding-top: 10px;
+  text-align: center;
+  padding-left: 10%;
+}
+#sortiment-4 > h2 {
+  font-size: 25pt;
+  padding-top: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/*flaske 5*/
+#sortiment-5 > img {
+  width: 80%;
+  padding-top: 50px;
+  padding-left: 10%;
+}
+#sortiment-5 > h2 {
+  padding-top: 20px;
+  font-size: 25pt;
+  text-align: center;
+  color: #ffffff;
+}
+
+/*sortiment slut*/
+
+/*billeder fakta/værdier start*/
+
+/*Billed fancy drink*/
+#billederfakta {
+  padding-left: 25%;
+  padding-right: 25%;
+  background-color: #f1e7dc;
+}
+
+.billederontop1 {
+  padding-right: 100%;
+  position: relative;
+  display: flex;
+  width: 500px;
+  height: 600px;
+  padding-top: 5%;
+}
+
+/* billed kaffen opppe fra*/
+.billederontop2 {
+  padding-left: 70%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 390px;
+  height: 390px;
+  margin-top: -60%;
+}
+
+/* billed drink fra toppen*/
+.billederontop3 {
+  padding-left: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  object-fit: contain;
+  width: 500px;
+  height: 300px;
+  margin-top: -45%;
+}
+
+/* billed ziropas bygning*/
+.billederontop4 {
+  padding-left: 40%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 550px;
+  height: 350px;
+  margin-top: 5%;
+}
+/* billed logo på bygning*/
+.billederontop5 {
+  padding-left: 52%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 110px;
+  height: 60px;
+  margin-top: -234px;
+  opacity: 0.7;
+}
+/* billed der hvor de står ved åren*/
+.billederontop6 {
+  padding-right: 70%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  object-fit: contain;
+  width: 600px;
+  height: 300px;
+  margin-top: -11%;
+}
+/* billed af de alle tre*/
+.billederontop7 {
+  padding-left: 80%;
+  position: relative;
+  display: flex;
+  object-fit: contain;
+  width: 450px;
+  height: 350px;
+  margin-top: -35%;
+}
+/*billed hanzo*/
+.billederontop8 {
+  padding-right: 30%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 530px;
+  height: 330px;
+  margin-top: 1%;
+}
+/*billed kunde*/
+.billederontop9 {
+  padding-left: 75%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  object-fit: contain;
+  width: 480px;
+  height: 280px;
+  margin-top: -40%;
+}
+/*billed kaffe ziropa*/
+.billederontop10 {
+  padding-left: 39%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  object-fit: contain;
+  width: 400px;
+  height: 300px;
+  padding-bottom: 60px;
+}
+
+/*fakta/værdier typografi*/
+#billederfakta > h4 {
+  color: #333333;
+  font-size: 150px;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 5%;
+}
+#billederfakta > h3 {
+  color: #333333;
+  font-size: 70px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+#billederfakta > h2 {
+  color: #333333;
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+#billederfakta > h5 {
+  color: #333333;
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+#billederfakta > h1 {
+  color: #333333;
+  font-size: 150px;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 300px;
+  padding-top: 35%;
+}
+
+/*Historie */
+
+/* The actual timeline (the vertical ruler) */
+
+.timeline {
+  position: relative;
+  background: url("images/ziropabaggrund.png");
+  box-sizing: border-box;
+}
+.historie-content > h2 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.historie-content > p {
+  color: white;
+  font-size: 14pt;
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 25px;
+}
+
+.introbilleder > img {
+  padding-top: 25px;
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+}
+
+#tidslinje-kaffe {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 100px;
+}
+
+.right > .historie-content > img {
+  margin-top: 25px;
+  margin-left: 20%;
+  display: flex;
+  justify-content: space-between;
+  border: 25px solid #fadcbe;
+  border-left: none;
+  border-top: none;
+  width: 60%;
+}
+
+.left > .historie-content > img {
+  border: 25px solid #fadcbe;
+  border-right: none;
+  border-bottom: none;
+  width: 75%;
+}
+
+/* timeline streg*/
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #f2efec;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container  */
+.historie-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+/* The circles on the timeline */
+.historie-container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #f2efec;
+  border: 4px solid #f2efec;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+  padding-top: 50px;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -13px;
+}
+
+/*historie slut*/
+
+/*produktion*/
+#produktion {
+  background-color: #333333;
+  height: 800px;
+}
+
+#produktion-titel {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#produktion-titel > h2 {
+  font-size: 60pt;
+}
+#produktion-titel > p {
+  font-size: 15pt;
+}
+
+#produktion-video > video {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 20px;
+}
+
+/*produktion slut*/
+
+/*Map boks*/
+#map {
+  margin-top: 50px;
+  width: 55%;
+  height: 500px;
+  border-radius: 10px;
+  border: 1px black;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#kort {
+  background-color: #f1e7dc;
+}
+
+.center > h2 {
+  text-align: center;
+  font-size: 60px;
+  padding-top: 60px;
+  text-align: center;
+  color: #333333;
+}
+
+.center2 {
+  text-align: center;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.center2 > img {
+  width: 5%;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+/*footer*/
+
+#footer {
+  display: flex;
+  justify-content: space-around;
+  color: rgb(255, 255, 255);
+  background-image: url(images/ziropabaggrund.png);
+}
+
+#footer {
+  flex-direction: column;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  height: 600px;
+}
+/*footer tekst*/
+#footer-tekst > div > h2 {
+  margin-left: 110px;
+  padding-top: 100px;
+  font-size: 30pt;
+}
+/*footer billeder til tekst*/
+#footer-tekst > div > img {
+  display: flex;
+  position: absolute;
+  margin-top: 90px;
+  display: flex;
+  margin-left: 50px;
+  width: 50px;
+}
+/*footer sociale medier*/
+#footer-sociale {
+  position: absolute;
+  display: flex;
+  right: 0;
+  margin-right: 100px;
+  margin-bottom: 15%;
+}
+#footer-sociale > div > img {
+  width: 100px;
+  padding-right: 5px;
+}
+/*footer logo*/
+#footer-logo {
+  position: absolute;
+  margin-top: 200px;
+}
+
+/*footer kontakt os tekst*/
+#footer-kontakttekst {
+  position: absolute;
+  margin-left: 40%;
+  margin-bottom: 30%;
+}
+#footer-kontakttekst > h2 {
+  color: #ffffff;
+  font-size: 50pt;
+}
+/*footer hvid linje*/
+#footer-kontakttekst > hr {
+  border: 2px solid white;
+}
